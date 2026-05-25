@@ -21,6 +21,7 @@ jobs:
   create_issues:
     name: Create issues
     runs-on: ubuntu-latest
+    needs: [post_next_step_content]
 
     steps:
       - name: Checkout repository
